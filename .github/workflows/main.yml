@@ -35,6 +35,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Run and Build Tests
-          cmake3 . 
+
+          cmake .
           make
           ./test
