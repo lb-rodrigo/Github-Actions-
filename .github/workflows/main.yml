@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with: 
-                submodules: recursive
+          submodules: recursive
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -35,7 +35,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Run and Build Tests
+<<<<<<< HEAD
 
           cmake .
+=======
+          cmake . 
+>>>>>>> 17769ab8c8d616bfe517f356d790d2773c564ad1
           make
           ./test
